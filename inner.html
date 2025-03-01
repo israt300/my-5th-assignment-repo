@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>hello</h1>
+<body class="bg-blue-100">
+    <nav class="flex items-center justify-center py-2 px-4 h-[80px]  max-w-[1536px] mx-auto bg-white shadow-sm rounded-2xl ">
+        <div class=" navbar flex justify-between items-center p-4">
+            <div class="flex items-center justify-center gap-2">
+                <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="Logo">
+                <p class="text-[30px]">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex">
+              <button class="w-[120px] h-[40px]  ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Back to Desk</button>
+            </div>
+          </div>
+    </nav>
+    <div>
+        <h1 class="font-bold text-[30px] flex justify-center items-center mt-8">Blog</h1>
+    </div>
+    <div class="py-2 px-4 h-[120px]  max-w-[1536px] mx-auto bg-white shadow-sm rounded-xl p-4 mt-7">
+        <h1 class="font-bold mt-5">Question-1: What are the different ways to select an element in the DOM?</h1>
+        <hr class="border-t-2 border-dashed border-[#dddde2] mt-2 w-full">
+        <p class="font-medium mt-3">Different ways to select an element in the DOM are: getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(),querySelectorAll(), getElementsByName()</p>    
+    </div>
+    <div class="py-2 px-4 h-[120px]  max-w-[1536px] mx-auto bg-white shadow-sm rounded-xl p-4 mt-10">
+        <h1 class="font-bold mt-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <hr class="border-t-2 border-dashed border-[#dddde2] mt-2 w-full">
+        <p class="font-medium mt-3">The differences between innerHTML, innerText, and textContent are: innerHTML – Retrieves the entire content of an element, including HTML. innerText – Retrieves only the visible text of an element. textContent – Retrieves all text of an element, including hidden text.</p>    
+    </div>
+    <div class="py-2 px-4 h-[120px]  max-w-[1536px] mx-auto bg-white shadow-sm rounded-xl p-4 mt-10">
+        <h1 class="font-bold mt-3">Question-3: What is event delegation in the DOM?</h1>
+        <hr class="border-t-2 border-dashed border-[#dddde2] mt-2 w-full">
+        <p class="font-medium mt-3">Event delegation is a technique where a single event listener is attached to a parent element to handle events for its child elements. This helps in efficiently managing events, especially for dynamically added elements.</p>    
+    </div>
+    <div class="py-2 px-4 h-[120px]  max-w-[1536px] mx-auto bg-white shadow-sm rounded-xl p-4 mt-10">
+        <h1 class="font-bold mt-3">Question-4: What is event bubbling in the DOM?</h1>
+        <hr class="border-t-2 border-dashed border-[#dddde2] mt-2 w-full">
+        <p class="font-medium mt-3">Event bubbling is a process in the DOM where an event starts from the innermost element (the target element) and then propagates upwards to its parent elements. This allows parent elements to catch events triggered by their child elements.</p>    
+    </div>
+    <div class="py-2 px-4 h-[120px]  max-w-[1536px] mx-auto bg-white shadow-sm rounded-xl p-4 mt-10">
+        <h1 class="font-bold mt-5">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        <hr class="border-t-2 border-dashed border-[#dddde2] mt-2 w-full">
+        <p class="font-medium mt-3">In JavaScript, you use createElement() to create an element, appendChild() to add it, and remove() to remove it.</p>    
+    </div>
 </body>
 </html>

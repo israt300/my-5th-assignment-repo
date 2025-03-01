@@ -5,6 +5,31 @@ function bgcolorchange() {
 }
 document.getElementById("colorChangeicon").addEventListener("click", bgcolorchange);
 
-document.getElementById('changepage').addEventListener('click', function() {
+ document.getElementById('changepage').addEventListener('click', function() {
     window.location.href = "./inner.html"; 
+ });
+ const buttonGroup = document.getElementsByClassName('completed')
+ Array.from(buttonGroup).forEach((button) => {
+    button.addEventListener("click", function () {
+        alert("Board Update Successfully!"); 
+        button.disabled = true;
+        button.style.backgroundColor = "#d1d5db"; 
+        button.style.cursor = "not-allowed";
+        button.style.opacity = "0.7"; 
+    });
+});
+
+
+ let numberDisplay = document.getElementById('numberDisplay');
+let number = 6;
+let decreaseBtns = document.querySelectorAll('#decreaseBtn');
+decreaseBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        if (number > 0) {
+            number -= 1; 
+            numberDisplay.textContent = number; 
+        } else {
+            alert("Number has reached 0!");
+        }
+    });
 });

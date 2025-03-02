@@ -21,7 +21,7 @@
                     <div class="flex gap-4 items-center">
                         <div class="flex gap-2 border border-white bg-[#eef0fa] w-[90px] h-[50px] justify-center items-center rounded-4xl">
                             <img class="h-[20px] w-[20px]" src="assets/checkbox.png" alt="">
-                            <p id="numDis" class="text-xl font-bold">23</p>
+                            <p id="numDis" class="text-xl font-bold">24</p>
                         </div>
     
                         <div>
@@ -65,8 +65,8 @@
                             <img class="h-[20px] w-[20px]" src="assets/calender.png" alt="">
                         </div>
                         <div>
-                            <p class="text-[25px]">Wed ,<br>
-                                <span class="font-bold text-2xl">Jul 28 2025</span> </p>
+                            <p id="day" class="text-[25px]">Wed,</p>
+                                <span id="date" class="font-bold text-2xl">Jul 28 2025</span>
                         </div>
                     </div>
                 </div>
@@ -86,8 +86,8 @@
                             <p>Deadline</p>
                             <h5 class="font-bold">21 March 2025</h5>
                             </div>
-                            <div>
-                                <button id="decreaseBtn" class="completed w-[104px] h-[36px]  ml-[70px] bg-[#3752FD] rounded-sm hover:scale-110 text-white items-center flex justify-center ">Completed</button>
+                            <div class="decreaseBtn">
+                                <button onclick="showMessage(1)" id="increaseBtn" class="completed w-[104px] h-[36px]  ml-[70px] bg-[#3752FD] rounded-sm hover:scale-110 text-white items-center flex justify-center ">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -103,8 +103,8 @@
                             <p class="font-bold">21 March 2025</p>
                             
                                 </div>
-                                <div>
-                                    <button id="decreaseBtn" class="completed w-[104px] h-[36px]  ml-[70px] hover:scale-110 bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
+                                <div class="decreaseBtn task">
+                                    <button onclick="showMessage(2)" id="increaseBtn" class="completed w-[104px] h-[36px]  ml-[70px] hover:scale-110 bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -121,8 +121,8 @@
                             <p class="font-bold">21 March 2025</p>
                             
                                 </div>
-                                <div>
-                                    <button id="decreaseBtn" class="completed w-[104px] h-[36px]  ml-[70px] hover:scale-110 bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
+                                <div class="decreaseBtn" >
+                                    <button onclick="showMessage(3)" id="increaseBtn" class="completed w-[104px] h-[36px]  ml-[70px] hover:scale-110 bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -141,8 +141,8 @@
                         <p class="font-bold">21 March 2025</p>
                         
                             </div>
-                            <div>
-                                <button id="decreaseBtn" class="completed w-[104px] h-[36px] hover:scale-110 ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
+                            <div class="decreaseBtn">
+                                <button onclick="showMessage(4)" id="increaseBtn" class="completed w-[104px] h-[36px] hover:scale-110 ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -158,8 +158,8 @@
                                 <p class="font-bold">21 March 2025</p>
                                 
                                     </div>
-                                    <div>
-                                        <button id="decreaseBtn" class="completed w-[104px] h-[36px] hover:scale-110  ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
+                                    <div class="decreaseBtn">
+                                        <button onclick="showMessage(5)" id="increaseBtn" class="completed w-[104px] h-[36px] hover:scale-110  ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center ">Completed</button>
                                     </div>
                                 </div>
                         </div>
@@ -176,8 +176,8 @@
                                 <p class="font-bold">21 March 2025</p>
                                 
                                     </div>
-                                    <div>
-                                        <button id="decreaseBtn" class="completed w-[104px] h-[36px] hover:scale-110 ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center">Completed</button>
+                                    <div class="decreaseBtn">
+                                        <button onclick="showMessage(6)" id="increaseBtn" class="completed w-[104px] h-[36px] hover:scale-110 ml-[70px] bg-[#3752FD] rounded-sm text-white items-center flex justify-center">Completed</button>
                                     </div>
                                 </div>
                         </div>
@@ -196,15 +196,41 @@
                     <p class="ml-3 font-semibold">Activity Log</p>
                 </div>
                 <div>
-                    <button class="w-[104px] hover:scale-110 mt-5 h-[36px] bg-[#3752FD] rounded-sm text-white">Clear History</button>
+                    <button id="removeBtn" class="w-[104px] hover:scale-110 mt-5 h-[36px] bg-[#3752FD] rounded-sm text-white">Clear History</button>
                 </div>
               </div>
               <hr class="border-t-2 border-dashed border-[#dddde2] mt-4 w-full">
-              <div class="bg-[#F4F7FF] rounded-md p-2 mt-4 w-[318px] h-[66px] ml-5">
-                <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-              </div>
-              <div class="bg-[#F4F7FF] rounded-md p-2  w-[318px] h-[66px] mt-4 ml-5">
-                <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+              <div id="content">
+                <div>
+                    <div id="msg1" class="hidden bg-[#F4F7FF] rounded-md p-2 mt-4 w-[318px] h-[66px] ml-5">
+                        <p>You have Complete The Task Fix Mobile Button Issue  at <span class="time" >00:00:00</span> PM</p>
+                      </div>
+                </div>
+                  <div >
+                    <div id="msg2" class="hidden bg-[#F4F7FF] rounded-md p-2  w-[318px] h-[66px] mt-4 ml-5">
+                        <p>You have Complete The Task add dark mood  at <span class="time">00:00:00</span> PM</p>
+                    </div>
+                  </div>
+                  <div >
+                    <div id="msg3" class="hidden bg-[#F4F7FF] rounded-md p-2  w-[318px] h-[66px] mt-4 ml-5">
+                        <p>You have Complete The Task Optimize  Home page  at <span class="time">00:00:00</span> PM</p>
+                      </div>
+                  </div>
+                  <div >
+                    <div id="msg4" class="hidden bg-[#F4F7FF] rounded-md p-2  w-[318px] h-[66px] mt-4 ml-5">
+                        <p>You have Complete The Task Add new emoji 🤲 at <span class="time">00:00:00</span> PM</p>
+                      </div>
+                  </div>
+                  <div >
+                    <div id="msg5" class="hidden bg-[#F4F7FF] rounded-md p-2  w-[318px] h-[66px] mt-4 ml-5">
+                        <p>You have Complete The Task Integrate OpenAI API   at <span class="time">00:00:00</span> PM</p>
+                      </div>
+                  </div>
+                  <div >
+                    <div id="msg6" class="hidden bg-[#F4F7FF] rounded-md p-2  w-[318px] h-[66px] mt-4 ml-5">
+                        <p>You have Complete The Task Improve Job searching  at <span class="time">00:00:00</span> PM</p>
+                    </div>
+                  </div>
               </div>
             </div>
     </div>

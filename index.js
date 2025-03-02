@@ -18,7 +18,9 @@ Array.from(buttonGroup).forEach((button, index) => {
         if (index < 5) { 
             alert("Board Update Successfully!");
         } else if (index === 5) { 
+            alert("Board Update Successfully!");
             alert("You have completed the task!");
+            
         }
         button.disabled = true;
         button.style.backgroundColor = "#d1d5db";
